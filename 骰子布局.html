@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+
+            body{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            .first , .second, .third, .fourth, .fifth, .sixth{
+                height: 104px;
+                width: 104px;
+                background-color: #e7e7e7;
+                border-radius: 10%;
+                margin: 16px;
+                padding: 4px;
+                box-shadow: 0 5px #fff inset,
+                            0 -5px #bbb inset,
+                            5px 0 #d7d7d7 inset,
+                            -5px 0 #d7d7d7 inset;
+            }
+            .first{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .second{
+                display: flex;
+                justify-content: space-between;
+            }
+            .second span:nth-of-type(2){
+                align-self: flex-end;
+            }
+            .third{
+                display: flex;
+                justify-content: space-between;
+            }
+            .third span:nth-of-type(2){
+                align-self: center;
+            }
+            .third span:nth-of-type(3){
+                align-self: flex-end;
+            }
+            .fourth{
+                display: flex;
+                justify-content: space-between;
+            }
+            .fifth{
+                display: flex;
+                justify-content: space-between;
+            }
+            .fifth .column:nth-of-type(2){
+                align-self: center;
+            }
+            .sixth{
+                display: flex;
+                justify-content: space-around;
+            }
+            .column{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            .dot{
+                display: block;
+                height: 24px;
+                width: 24px;
+                background-color: #333;
+                border-radius: 50%;
+                box-shadow: 0 3px #111 inset,
+                            0 -3px #555 inset;
+                margin: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 第一个骰子 -->
+        <div class="first">
+            <span class="dot"></span>
+        </div>
+        <!-- 第二个骰子 -->
+        <div class="second">
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <!-- 第三个骰子 -->
+        <div class="third">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <!-- 第四个骰子 -->
+        <div class="fourth">
+            <div class="column">
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="column">
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <!-- 第五个骰子 -->
+        <div class="fifth">
+            <div class="column">
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="column">
+                <span class="dot"></span>
+            </div>
+            <div class="column">
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <!-- 第六个骰子 -->
+        <div class="sixth">
+            <div class="column">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="column">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </body>
+</html>
